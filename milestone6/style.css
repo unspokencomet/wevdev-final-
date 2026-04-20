@@ -1,0 +1,108 @@
+body{
+    background-image: url(images/deep\ sea.jpg);
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-gap: 10px;
+
+}
+
+.div1{
+    /*background-color: cyan;*/
+    color: white;
+    text-align: center;
+}
+.div2{
+   /* background-color: green;*/
+    color: white;
+}
+.div3{
+    /*background-color: red;*/
+}
+.div3 img{
+    width: 100%;
+    left: 0;
+    height: 100%;
+}
+
+.div4 h1{
+    /*background-color: brown;*/
+    color: white;
+}
+.div4 img{
+    width: 40%;
+    height: 40%;
+    padding: 10px;
+}
+.contaner{
+    position: relative; 
+    width: 100%;
+    height: 23em;
+    border: 2px solid black; 
+}
+
+.corner-img{
+    position: absolute;
+}
+
+.top-left{
+    top: 0;
+    left: 0;
+}
+
+.top-right{
+    top: 0;
+    right: 0;
+}
+
+.bottom-left{
+    bottom: 0;
+    left: 0;
+}
+
+.bottom-right{
+    bottom: 0;
+    right: 0;
+}
+.div1 { grid-area: 1 / 2 / 2 / 4; }
+.div2 { grid-area: 2 / 2 / 4 / 4; }
+.div3 { grid-area: 4 / 1 / 4 / 8; }
+.div4 { grid-area: 6 / 1 / 5 / 5; }
+
+@media only screen and (max-width: 992px) {
+  body {
+    .parent{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+     grid-template-columns: 1fr 768px 1fr;
+    }
+
+
+  }
+}
+@media only screen and (max-width: 768px){
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        grid-gap: 10px;
+        width: 100%;
+
+    }   
+    body {
+        .parent{
+            grid-template-columns: 1fr;
+        }
+        
+    }
+
+}
+.EnemyParent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-gap: 30px;
+}
