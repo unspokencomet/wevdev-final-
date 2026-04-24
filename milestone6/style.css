@@ -18,7 +18,7 @@ body{
    /* background-color: green;*/
     color: white;
 }
-.div3{
+.div3 {
     /*background-color: red;*/
 }
 .div3 img{
@@ -28,8 +28,11 @@ body{
 }
 
 .div4 h1{
-    /*background-color: brown;*/
+    background-color: brown;
     color: white;
+}
+.div4 {
+    background-color: black;
 }
 .div4 img{
     width: 40%;
@@ -100,9 +103,25 @@ body{
     }
 
 }
-.EnemyParent {
+.contentparent {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(7, 1fr);
-    grid-gap: 30px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.div1content { grid-area: 1 / 1 / 2 / 4; }
+.div2content { grid-area: 2 / 1 / 3 / 4; }
+.div3content { grid-area: 3 / 1 / 4 / 4; }
+.div4content { grid-area: 4 / 1 / 5 / 4; }
+.div5content { grid-area: 5 / 1 / 6 / 4; }
+.div6content { grid-area: 6 / 1 / 7 / 4; }
+.div7content { grid-area: 7 / 1 / 8 / 4; }
+
+.div1content img{
+    left: 0;
+}
+.div1content p {
+    right: 1;
 }
