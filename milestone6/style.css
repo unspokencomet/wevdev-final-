@@ -85,9 +85,9 @@ nav a:hover{
 }
 .contaner{
     position: relative; 
-    width: 85%;
-    height: 23em; 
+    width: 90%;
     padding: 3rem;
+    height: 40em; 
     border: 1rem solid black;
     background-color: black;
 }
@@ -198,11 +198,14 @@ nav a:hover{
 }
 
 .contentparent img{
-    width: 70%;
-    height: 60%;
+    width: 60%;
+    height: 50%;
 }
 
 h1 {
+    color: white;
+}
+h2 {
     color: white;
 }
 h3 {
